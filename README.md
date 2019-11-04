@@ -15,6 +15,8 @@ To get the Node server running locally:
 
 - [expressjs](https://github.com/expressjs/express) - The server for handling and routing HTTP requests
 - [mongoose](https://github.com/Automattic/mongoose) - For modeling and mapping MongoDB data to javascript 
+- [passport](https://github.com/jaredhanson/passport) - To manage authentication
+- [cors](https://github.com/expressjs/cors) - To allow access from other origins
 
 ## Application Structure
 
