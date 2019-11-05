@@ -7,7 +7,7 @@
         "watch": "tsc -w",
         "serve-debug": "nodemon --inspect=0.0.0.0:9229 dist/server.js",
         "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"yarn watch\" \"yarn serve-debug\"",
-        "start": "ts-node ./src/server.ts",
+        "start": "nodemon ./src/server.ts",
         "prod": "npm run build && npm run start",
         "publish": " heroku container:push web && heroku container:release web"
     },

@@ -11,7 +11,11 @@ export const RoleModel = new mongoose.Schema(
             intl: true,
         },
     },
-    { timestamps: true }
+    {
+        timestamps: true,
+        toJSON: { virtuals: true },
+        toObject: { virtuals: true },
+    }
 )
 
 RoleModel.plugin(mongoose_delete, {

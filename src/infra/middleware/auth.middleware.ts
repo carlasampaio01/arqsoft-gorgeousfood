@@ -8,7 +8,6 @@ const handleJWT = (
 ) => async (err: any, data: any, info: any) => {
     const { logIn } = request
     const { user } = data
-
     try {
         if (!user) {
             return response.error('Invalid Authorization Token', 401)
