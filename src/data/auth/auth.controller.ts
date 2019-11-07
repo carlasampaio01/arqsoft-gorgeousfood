@@ -20,9 +20,7 @@ export default class AuthController {
 
       return response.success(result);
     } catch (error) {
-      if (error && error.message == "Error: Account not validated")
         return response.error(error.message, 401);
-      return response.error(error.message);
     }
   };
 
