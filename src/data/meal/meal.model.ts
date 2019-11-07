@@ -2,6 +2,7 @@ import * as mongoose from 'mongoose'
 import { Languages, Default } from '../../infra/extensions/languages.extensions'
 import * as mongooseIntl from 'mongoose-intl'
 import * as mongoose_delete from 'mongoose-delete'
+import moment = require('moment')
 
 export interface IMeal {
     description: string
@@ -13,6 +14,12 @@ export const MealModel = new mongoose.Schema(
             type: String,
             required: 'Enter the description',
             intl: true,
+        },
+        number: {
+            type: Number,
+            required: 'Enter the number',
+            unique: true,
+            default: moment().unix(),
         },
         descriptors: [
             {

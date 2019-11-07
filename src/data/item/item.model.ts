@@ -15,10 +15,9 @@ export const ItemModel = new mongoose.Schema(
             ref: 'meals',
             required: true,
         },
-        number: {
-            type: Number,
-            required: 'Enter the number',
-            unique: true,
+        sold: {
+            type: Boolean,
+            default: false,
         },
         expiration_date: {
             type: Date,

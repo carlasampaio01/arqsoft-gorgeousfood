@@ -5,7 +5,6 @@ const validations = {
     create: [
         check('expiration_date').exists(),
         check('production_date').exists(),
-        check('number').exists(),
         check('meal').exists(),
         ValidateFields,
     ],
