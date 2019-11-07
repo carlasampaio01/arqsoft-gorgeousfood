@@ -1,10 +1,10 @@
-import { Router } from "express";
-import DescriptorController from "./item.controller";
-import RouteMaker from "../../infra/extensions/route.extensions";
-import Validations from "./item.validations";
+import { Router } from 'express'
+import ItemController from './item.controller'
+import RouteMaker from '../../infra/extensions/route.extensions'
+import Validations from './item.validations'
 
-const router = Router();
-const controller = new DescriptorController();
+const router = Router()
+const controller = new ItemController()
 
 /**
  *
@@ -14,6 +14,6 @@ const controller = new DescriptorController();
  * @returns {Error}  default - Unexpected error
  */
 
-RouteMaker(router, controller, Validations);
+RouteMaker(router, controller, Validations)
 
-export default router;
+export default router

@@ -1,10 +1,10 @@
 import { Router } from 'express'
-import DescriptorController from './role.controller'
+import RoleController from './role.controller'
 import { RouteMakerAdmin } from '../../infra/extensions/route.extensions'
 import Validations from './role.validations'
 
 const router = Router()
-const controller = new DescriptorController()
+const controller = new RoleController()
 
 /**
  *
